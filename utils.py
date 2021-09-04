@@ -29,7 +29,7 @@ def get_latest(refresh_repo):
   print("Requesting latest plans from Github ...")
   try:
     Repo.clone_from("https://github.com/center-for-threat-informed-defense/adversary_emulation_library.git", PLANS_DIR)
-    print("Successfully retrieved lastest plans from Github")
+    print("Successfully retrieved latest plans from Github")
   except:
     raise RuntimeError("Could not clone the remote repo and retrieve Emulation Plans from Github")
 
